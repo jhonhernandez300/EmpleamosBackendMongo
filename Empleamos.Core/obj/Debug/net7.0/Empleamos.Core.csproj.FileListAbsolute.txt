@@ -1,0 +1,12 @@
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\bin\Debug\net7.0\Empleamos.Core.deps.json
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\bin\Debug\net7.0\Empleamos.Core.dll
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\bin\Debug\net7.0\Empleamos.Core.pdb
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\Empleamos.Core.csproj.AssemblyReference.cache
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\Empleamos.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\Empleamos.Core.AssemblyInfoInputs.cache
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\Empleamos.Core.AssemblyInfo.cs
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\Empleamos.Core.csproj.CoreCompileInputs.cache
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\Empleamos.Core.dll
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\refint\Empleamos.Core.dll
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\Empleamos.Core.pdb
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\ref\Empleamos.Core.dll
