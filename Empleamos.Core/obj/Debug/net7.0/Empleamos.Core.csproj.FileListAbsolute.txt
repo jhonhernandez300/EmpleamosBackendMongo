@@ -10,3 +10,4 @@ C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\refint\Empleamos.Core.dll
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\Empleamos.Core.pdb
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\ref\Empleamos.Core.dll
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Core\obj\Debug\net7.0\Empleamos.Core.sourcelink.json

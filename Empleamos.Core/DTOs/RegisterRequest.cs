@@ -20,5 +20,12 @@ namespace Empleamos.Core.DTOs
         public string Password { get; set; } = string.Empty;
         [Required, DataType(DataType.Password), Compare(nameof(Password), ErrorMessage = "Passwords do not match")]
         public string ConfirmPassword { get; set; } = string.Empty;
+
+        public string NIT { get; set; } = string.Empty;
+        public string RazonSocial { get; set; } = string.Empty;
+        public string Address { get; set; } = string.Empty;
+        public string City { get; set; } = string.Empty;
+        public string Department { get; set; } = string.Empty;
+        public string ContactEmail { get; set; } = string.Empty;
     }
 }

@@ -55,13 +55,19 @@ namespace Empleamos.Api.Controllers
                     Email = request.Email,
                     ConcurrencyStamp = Guid.NewGuid().ToString(),
                     UserName = request.Email,
-
+                    NIT = request.NIT,
+                    RazonSocial = request.RazonSocial,
+                    Address = request.Address,
+                    City = request.City,
+                    Department = request.Department,
+                    ContactEmail = request.ContactEmail,
+                    CreationDate = DateTime.UtcNow
                 };
                 var createUserResult = await _userManager.CreateAsync(userExists, request.Password);
                 if (!createUserResult.Succeeded) return new RegisterResponse { Message = $"Create user failed {createUserResult?.Errors?.First()?.Description}", Success = false };
                 //user is created...
                 //then add user to a role...
-                var addUserToRoleResult = await _userManager.AddToRoleAsync(userExists, "USER");
+                var addUserToRoleResult = await _userManager.AddToRoleAsync(userExists, "SUPLIER");
                 if (!addUserToRoleResult.Succeeded) return new RegisterResponse { Message = $"Create user succeeded but could not add user to role {addUserToRoleResult?.Errors?.First()?.Description}", Success = false };
 
                 //all is still well..
@@ -95,12 +101,12 @@ namespace Empleamos.Api.Controllers
 
                 //all is well if ew reach here
                 var claims = new List<Claim>
-        {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
-            new Claim(ClaimTypes.Name, user.UserName),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
-        };
+                {
+                    new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
+                    new Claim(ClaimTypes.Name, user.UserName),
+                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
+                };
                 var roles = await _userManager.GetRolesAsync(user);
                 var roleClaims = roles.Select(x => new Claim(ClaimTypes.Role, x));
                 claims.AddRange(roleClaims);

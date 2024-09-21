@@ -9,7 +9,9 @@ namespace Empleamos.Core.Interfaces
 {
     public interface IUserRepository
     {
+        Task<bool> DeleteAsync(Guid id);
+        Task<UserEntity> GetByIdAsync(Guid id); 
+        Task<bool> UpdateAsync(UserEntity user); 
         Task<List<UserEntity>> GetAll();
-
     }
 }
