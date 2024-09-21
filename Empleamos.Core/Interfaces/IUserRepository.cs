@@ -9,6 +9,8 @@ namespace Empleamos.Core.Interfaces
 {
     public interface IUserRepository
     {
+        Task<IEnumerable<UserEntity>> GetAllAsync();
+        Task<bool> CreateAsync(UserEntity user);
         Task<bool> DeleteAsync(Guid id);
         Task<UserEntity> GetByIdAsync(Guid id); 
         Task<bool> UpdateAsync(UserEntity user); 

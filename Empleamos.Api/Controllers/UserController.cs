@@ -1,56 +1,76 @@
 ﻿using Empleamos.Core.DTOs;
 using Empleamos.Core.Entities;
 using Empleamos.Core.Interfaces;
+using Empleamos.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Empleamos.Api.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
-    public class UserController : Controller
+    [Route("api/[controller]")]
+    public class UserController : ControllerBase
     {
-        private readonly IUserService _userService;
+        private readonly IUserFacadeService _userFacadeService;
 
-        public UserController(IUserService userService)
+        public UserController(IUserFacadeService userFacadeService)
         {
-            _userService = userService;
+            _userFacadeService = userFacadeService;
         }
 
-        [HttpDelete("{id}")]
+        [HttpGet]  
         [Authorize]
-        public async Task<IActionResult> DeleteUser(Guid id)
+        public async Task<IActionResult> GetAllUsers()
         {
-            var deleted = await _userService.DeleteUserAsync(id);
+            var users = await _userFacadeService.GetAllUsersAsync(); 
+            return Ok(users);
+        }
 
-            if (!deleted)
+        [HttpGet("{id}")]
+        [Authorize]
+        public async Task<IActionResult> GetUserById(Guid id)
+        {
+            var user = await _userFacadeService.GetUserByIdAsync(id);
+            if (user == null)
             {
-                return NotFound(new { Message = "User not found" });
+                return NotFound();
             }
 
-            return NoContent();  
+            return Ok(user);
+        }      
+
+        [HttpPost]
+        public async Task<IActionResult> CreateUser([FromBody] UserEntity user)
+        {
+            if (await _userFacadeService.CreateUserAsync(user))
+            {
+                return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
+            }
+            return BadRequest();
         }
 
-        [HttpPut("UpdateUser/{id}")]
+        [HttpPut("{id}")]
         [Authorize]
         public async Task<IActionResult> UpdateUser(Guid id, [FromBody] UpdateUserRequest request)
         {
-            if (id != request.Id)
+            if (await _userFacadeService.UpdateUserAsync(id, request))
             {
-                return BadRequest("User ID mismatch.");
+                return NoContent();
             }
-
-            var result = await _userService.UpdateUserAsync(request);
-            return result.Success ? Ok(result) : BadRequest(result.Message);
+            return BadRequest("User ID mismatch or user not found");
         }
 
-        [Authorize]
-        [HttpGet]        
-        public async Task<List<UserEntity>> GetAll()
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUser(Guid id)
         {
-            return await _userService.GetAll();
+            if (await _userFacadeService.DeleteUserAsync(id))
+            {
+                return NoContent();
+            }
+            return NotFound();
         }
     }
+
 }
 
 /* https://www.youtube.com/watch?v=vItyn5jd-k8

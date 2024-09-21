@@ -20,6 +20,17 @@ namespace Empleamos.Infrastructure.Repositories
             _users = mongoClient.GetDatabase(options.Value.DatabaseName).GetCollection<UserEntity>("users");
         }
 
+        public async Task<IEnumerable<UserEntity>> GetAllAsync()  
+        {
+            return await _users.Find(user => true).ToListAsync();  
+        }
+
+        public async Task<bool> CreateAsync(UserEntity user) 
+        {
+            await _users.InsertOneAsync(user);
+            return true;
+        }
+
         public async Task<bool> DeleteAsync(Guid id)
         {
             var result = await _users.DeleteOneAsync(user => user.Id == id);

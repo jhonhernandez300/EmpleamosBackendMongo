@@ -18,6 +18,32 @@ namespace Empleamos.Core.Services
             _userRepository = userRepository;
         }
 
+        public async Task<IEnumerable<UserEntity>> GetAllAsync()  
+        {
+            return await _userRepository.GetAllAsync();
+        }
+
+        public async Task<bool> UpdateAsync(UserEntity user)  
+        {
+            return await _userRepository.UpdateAsync(user);
+        }
+
+        public async Task<bool> CreateAsync(UserEntity user)  
+        {
+            return await _userRepository.CreateAsync(user);
+        }
+
+
+        public async Task<UserEntity> GetByIdAsync(Guid id)
+        {
+            return await _userRepository.GetByIdAsync(id);  
+        }
+
+        public async Task<bool> DeleteAsync(Guid id)
+        {
+            return await _userRepository.DeleteAsync(id);
+        }
+
         public async Task<bool> DeleteUserAsync(Guid id)
         {
             return await _userRepository.DeleteAsync(id);

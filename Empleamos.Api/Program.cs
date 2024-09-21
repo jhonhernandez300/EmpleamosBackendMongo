@@ -11,12 +11,14 @@ using MongoDB.Bson.Serialization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Empleamos.Core.Facade;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<MongoDbSettingsEntity>(builder.Configuration.GetSection(nameof(MongoDbSettings)));
 builder.Services.AddSingleton<IUserService, UserService>();
 builder.Services.AddSingleton<IUserRepository, UserRepository>();
+builder.Services.AddSingleton<IUserFacadeService, UserFacadeService>();
 
 BsonSerializer.RegisterSerializer(new GuidSerializer(MongoDB.Bson.BsonType.String));
 BsonSerializer.RegisterSerializer(new DateTimeSerializer(MongoDB.Bson.BsonType.String));
