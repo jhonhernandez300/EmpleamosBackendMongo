@@ -1,18 +1,8 @@
 [
   {
     "ContainingType": "Empleamos.Api.Controllers.UserController",
-    "Method": "GetAllUsers",
-    "RelativePath": "api/User",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Empleamos.Api.Controllers.UserController",
     "Method": "CreateUser",
-    "RelativePath": "api/User",
+    "RelativePath": "api/User/CreateUser",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -27,8 +17,34 @@
   },
   {
     "ContainingType": "Empleamos.Api.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/User/DeleteUser/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Empleamos.Api.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/User/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Empleamos.Api.Controllers.UserController",
     "Method": "GetUserById",
-    "RelativePath": "api/User/{id}",
+    "RelativePath": "api/User/GetUserById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -44,7 +60,7 @@
   {
     "ContainingType": "Empleamos.Api.Controllers.UserController",
     "Method": "UpdateUser",
-    "RelativePath": "api/User/{id}",
+    "RelativePath": "api/User/UpdateUser/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -63,16 +79,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Empleamos.Api.Controllers.UserController",
-    "Method": "DeleteUser",
-    "RelativePath": "api/User/{id}",
-    "HttpMethod": "DELETE",
+    "ContainingType": "Empleamos.Api.Controllers.AuthenticationController",
+    "Method": "CreateRole",
+    "RelativePath": "api/v1/authenticate/CreateRole",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
+        "Name": "request",
+        "Type": "Empleamos.Core.DTOs.CreateRoleRequest",
         "IsRequired": true
       }
     ],
@@ -115,22 +131,6 @@
       {
         "Name": "request",
         "Type": "Empleamos.Core.DTOs.RegisterRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Empleamos.Api.Controllers.AuthenticationController",
-    "Method": "CreateRole",
-    "RelativePath": "api/v1/authenticate/roles/add",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Empleamos.Core.DTOs.CreateRoleRequest",
         "IsRequired": true
       }
     ],

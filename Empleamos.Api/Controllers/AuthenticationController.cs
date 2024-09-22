@@ -24,20 +24,48 @@ namespace Empleamos.Api.Controllers
         }
 
         [HttpPost]
-        [Route("roles/add")]
+        [Route("CreateRole")]
         public async Task<IActionResult> CreateRole([FromBody] CreateRoleRequest request)
         {
-            var appRole = new ApplicationRoleEntity { Name = request.Role };
-            var createRole = await _roleManager.CreateAsync(appRole);
-            return Ok(new { message = "role created succesfully" });
+            if (request == null || string.IsNullOrEmpty(request.Role))
+            {
+                return BadRequest(new { message = "Invalid role request." });
+            }
+
+            try
+            {
+                var appRole = new ApplicationRoleEntity { Name = request.Role };
+                var createRole = await _roleManager.CreateAsync(appRole);
+                if (!createRole.Succeeded)
+                {
+                    return BadRequest(new { message = "Failed to create role." });
+                }
+                return Ok(new { message = "Role created successfully." });
+            }
+            catch (Exception ex)
+            {                
+                return StatusCode(500, new { message = "An error occurred while creating the role.", error = ex.Message });
+            }
         }
 
         [HttpPost]
         [Route("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
-            var result = await RegisterAsync(request);
-            return result.Success ? Ok(result) : BadRequest(result.Message);
+            if (request == null)
+            {
+                return BadRequest(new { message = "Invalid register request." });
+            }
+
+            try
+            {
+                var result = await RegisterAsync(request);
+                return result.Success ? Ok(new { message = result.Message }) : BadRequest(new { message = result.Message });
+            }
+            catch (Exception ex)
+            {                
+                return StatusCode(500, new { message = "An error occurred while registering.", error = ex.Message });
+            }
         }
 
         private async Task<RegisterResponse> RegisterAsync(RegisterRequest request)
@@ -88,8 +116,20 @@ namespace Empleamos.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(LoginResponse))]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
-            var result = await LoginAsync(request);
-            return result.Success ? Ok(result) : BadRequest(result.Message);
+            if (request == null || string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Password))
+            {
+                return BadRequest(new { message = "Invalid login request." });
+            }
+
+            try
+            {
+                var result = await LoginAsync(request);
+                return result.Success ? Ok(new { message = result.Message, accessToken = result.AccessToken }) : BadRequest(new { message = result.Message });
+            }
+            catch (Exception ex)
+            {                
+                return StatusCode(500, new { message = "An error occurred while logging in.", error = ex.Message });
+            }
         }
 
         private async Task<LoginResponse> LoginAsync(LoginRequest request)

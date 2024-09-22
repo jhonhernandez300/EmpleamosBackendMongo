@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Empleamos.Api.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
@@ -18,57 +19,113 @@ namespace Empleamos.Api.Controllers
             _userFacadeService = userFacadeService;
         }
 
-        [HttpGet]  
-        [Authorize]
+        [HttpGet("GetAllUsers")]
         public async Task<IActionResult> GetAllUsers()
         {
-            var users = await _userFacadeService.GetAllUsersAsync(); 
-            return Ok(users);
+            try
+            {
+                var users = await _userFacadeService.GetAllUsersAsync();
+                if (users == null || !users.Any())
+                {
+                    return NotFound(new { message = "No users found." });
+                }
+                return Ok(new { message = "Users retrieved successfully.", data = users });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { ex.Message });
+            }
         }
 
-        [HttpGet("{id}")]
-        [Authorize]
+        [HttpGet("GetUserById/{id}")]
         public async Task<IActionResult> GetUserById(Guid id)
         {
-            var user = await _userFacadeService.GetUserByIdAsync(id);
-            if (user == null)
+            if (id == Guid.Empty)
             {
-                return NotFound();
+                return BadRequest(new { message = "Invalid user ID." });
             }
 
-            return Ok(user);
-        }      
+            try
+            {
+                var user = await _userFacadeService.GetUserByIdAsync(id);
+                if (user == null)
+                {
+                    return NotFound(new { message = $"User with ID {id} not found." });
+                }
+                return Ok(new { message = "User retrieved successfully.", data = user });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { ex.Message });
+            }
+        }
 
-        [HttpPost]
+        [HttpPost("CreateUser")]
         public async Task<IActionResult> CreateUser([FromBody] UserEntity user)
         {
-            if (await _userFacadeService.CreateUserAsync(user))
+            if (user == null)
             {
-                return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
+                return BadRequest(new { message = "User data is required." });
             }
-            return BadRequest();
+
+            try
+            {
+                if (await _userFacadeService.CreateUserAsync(user))
+                {
+                    return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, new { message = "User created successfully.", data = user });
+                }
+                return BadRequest(new { message = "Failed to create the user." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { ex.Message });
+            }
         }
 
-        [HttpPut("{id}")]
-        [Authorize]
+        [HttpPut("UpdateUser/{id}")]
         public async Task<IActionResult> UpdateUser(Guid id, [FromBody] UpdateUserRequest request)
         {
-            if (await _userFacadeService.UpdateUserAsync(id, request))
+            if (id == Guid.Empty || request == null)
             {
-                return NoContent();
+                return BadRequest(new { message = "Invalid input." });
             }
-            return BadRequest("User ID mismatch or user not found");
+
+            try
+            {
+                if (await _userFacadeService.UpdateUserAsync(id, request))
+                {
+                    return NoContent();
+                }
+                return BadRequest(new { message = "User ID mismatch or user not found." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { ex.Message });
+            }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("DeleteUser/{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
-            if (await _userFacadeService.DeleteUserAsync(id))
+            if (id == Guid.Empty)
             {
-                return NoContent();
+                return BadRequest(new { message = "Invalid user ID." });
             }
-            return NotFound();
+
+            try
+            {
+                if (await _userFacadeService.DeleteUserAsync(id))
+                {
+                    return NoContent();
+                }
+                return NotFound(new { message = $"User with ID {id} not found." });
+            }
+            catch (Exception ex)
+            {                
+                return StatusCode(500, new { ex.Message });
+            }
         }
+        
     }
 
 }
