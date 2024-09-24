@@ -1,7 +1,6 @@
 ﻿using Empleamos.Core.DTOs;
 using Empleamos.Core.Entities;
 using Empleamos.Core.Interfaces;
-using Empleamos.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Tests;
@@ -28,14 +27,13 @@ namespace Empleamos.Api.Controllers
                 var users = await _userFacadeService.GetAllUsersAsync();
                 if (users == null || !users.Any())
                 {
-                    return NotFound(new { message = "No users found." });
-                }                
+                    return NotFound(new ApiResponse { Message = "No users found.", Data = null }); // cambio
+                }
                 return Ok(new ApiResponse { Message = "Users retrieved successfully.", Data = users });
-
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { ex.Message });
+                return StatusCode(500, new ApiResponse { Message = "An error occurred." });
             }
         }
 
@@ -44,7 +42,7 @@ namespace Empleamos.Api.Controllers
         {
             if (id == Guid.Empty)
             {
-                return BadRequest(new { message = "Invalid user ID." });
+                return BadRequest(new ApiResponse { Message = "Invalid user ID.", Data = null }); // cambio
             }
 
             try
@@ -52,13 +50,13 @@ namespace Empleamos.Api.Controllers
                 var user = await _userFacadeService.GetUserByIdAsync(id);
                 if (user == null)
                 {
-                    return NotFound(new { message = $"User with ID {id} not found." });
+                    return NotFound(new ApiResponse { Message = $"User with ID {id} not found.", Data = null }); // cambio
                 }
-                return Ok(new { message = "User retrieved successfully.", data = user });
+                return Ok(new ApiResponse { Message = "User retrieved successfully.", Data = user });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { ex.Message });
+                return StatusCode(500, new ApiResponse { Message = "An error occurred.", Error = ex.Message }); // cambio
             }
         }
 
@@ -67,20 +65,20 @@ namespace Empleamos.Api.Controllers
         {
             if (user == null)
             {
-                return BadRequest(new { message = "User data is required." });
+                return BadRequest(new ApiResponse { Message = "User data is required.", Data = null }); // cambio
             }
 
             try
             {
                 if (await _userFacadeService.CreateUserAsync(user))
                 {
-                    return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, new { message = "User created successfully.", data = user });
+                    return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, new ApiResponse { Message = "User created successfully.", Data = user });
                 }
-                return BadRequest(new { message = "Failed to create the user." });
+                return BadRequest(new ApiResponse { Message = "Failed to create the user.", Data = null });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { ex.Message });
+                return StatusCode(500, new ApiResponse { Message = "An error occurred.", Error = ex.Message });
             }
         }
 
@@ -89,20 +87,20 @@ namespace Empleamos.Api.Controllers
         {
             if (id == Guid.Empty || request == null)
             {
-                return BadRequest(new { message = "Invalid input." });
+                return BadRequest(new ApiResponse { Message = "Invalid input.", Data = null }); // cambio
             }
 
             try
             {
                 if (await _userFacadeService.UpdateUserAsync(id, request))
                 {
-                    return NoContent();
+                    return Ok(new ApiResponse { Message = "User updated successfully.", Data = request }); // cambio
                 }
-                return BadRequest(new { message = "User ID mismatch or user not found." });
+                return BadRequest(new ApiResponse { Message = "User ID mismatch or user not found.", Data = null });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { ex.Message });
+                return StatusCode(500, new ApiResponse { Message = "An error occurred.", Error = ex.Message });
             }
         }
 
@@ -111,27 +109,21 @@ namespace Empleamos.Api.Controllers
         {
             if (id == Guid.Empty)
             {
-                return BadRequest(new { message = "Invalid user ID." });
+                return BadRequest(new ApiResponse { Message = "Invalid user ID.", Data = null }); // cambio
             }
 
             try
             {
                 if (await _userFacadeService.DeleteUserAsync(id))
                 {
-                    return NoContent();
+                    return Ok(new ApiResponse { Message = "User deleted successfully.", Data = null }); // cambio
                 }
-                return NotFound(new { message = $"User with ID {id} not found." });
+                return NotFound(new ApiResponse { Message = $"User with ID {id} not found.", Data = null });
             }
             catch (Exception ex)
-            {                
-                return StatusCode(500, new { ex.Message });
+            {
+                return StatusCode(500, new ApiResponse { Message = "An error occurred.", Error = ex.Message });
             }
         }
-        
     }
-
 }
-
-/* https://www.youtube.com/watch?v=vItyn5jd-k8
- * https://juandavid.site/20230729/net-core-mongo-jwt
- */
