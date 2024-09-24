@@ -1,0 +1,406 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Empleamos.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Empleamos.Api.csproj",
+        "projectName": "Empleamos.Api",
+        "projectPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Empleamos.Api.csproj",
+        "packagesPath": "C:\\Users\\jhon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jhon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Empleamos.Core.csproj": {
+                "projectPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Empleamos.Core.csproj"
+              },
+              "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Infrastructure\\Empleamos.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Infrastructure\\Empleamos.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AspNetCore.Identity.MongoDbCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Empleamos.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Empleamos.Core.csproj",
+        "projectName": "Empleamos.Core",
+        "projectPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Empleamos.Core.csproj",
+        "packagesPath": "C:\\Users\\jhon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jhon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AspNetCore.Identity.MongoDbCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.29.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.29.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Infrastructure\\Empleamos.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Infrastructure\\Empleamos.Infrastructure.csproj",
+        "projectName": "Empleamos.Infrastructure",
+        "projectPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Infrastructure\\Empleamos.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\jhon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jhon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Empleamos.Core.csproj": {
+                "projectPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Empleamos.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\Tests.csproj",
+        "packagesPath": "C:\\Users\\jhon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jhon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Empleamos.Api.csproj": {
+                "projectPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Empleamos.Api.csproj"
+              },
+              "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Empleamos.Core.csproj": {
+                "projectPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Empleamos.Core.csproj"
+              },
+              "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Infrastructure\\Empleamos.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Infrastructure\\Empleamos.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.7.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

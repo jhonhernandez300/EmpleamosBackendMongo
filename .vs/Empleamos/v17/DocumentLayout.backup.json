@@ -7,36 +7,20 @@
       "RelativeMoniker": "D:0:0:{2652A23D-8991-43B6-A639-4ABE771783FD}|Empleamos.Api\\Empleamos.Api.csproj|solutionrelative:empleamos.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2652A23D-8991-43B6-A639-4ABE771783FD}|Empleamos.Api\\Empleamos.Api.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\empleamos.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2652A23D-8991-43B6-A639-4ABE771783FD}|Empleamos.Api\\Empleamos.Api.csproj|solutionrelative:empleamos.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8826297-04B0-4A38-8902-F2B9C1B78798}|Empleamos.Core\\Empleamos.Core.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\empleamos.core\\interfaces\\iuserfacadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8826297-04B0-4A38-8902-F2B9C1B78798}|Empleamos.Core\\Empleamos.Core.csproj|solutionrelative:empleamos.core\\interfaces\\iuserfacadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8826297-04B0-4A38-8902-F2B9C1B78798}|Empleamos.Core\\Empleamos.Core.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\empleamos.core\\facade\\userfacadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8826297-04B0-4A38-8902-F2B9C1B78798}|Empleamos.Core\\Empleamos.Core.csproj|solutionrelative:empleamos.core\\facade\\userfacadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8826297-04B0-4A38-8902-F2B9C1B78798}|Empleamos.Core\\Empleamos.Core.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\empleamos.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8826297-04B0-4A38-8902-F2B9C1B78798}|Empleamos.Core\\Empleamos.Core.csproj|solutionrelative:empleamos.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8826297-04B0-4A38-8902-F2B9C1B78798}|Empleamos.Core\\Empleamos.Core.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\empleamos.core\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8826297-04B0-4A38-8902-F2B9C1B78798}|Empleamos.Core\\Empleamos.Core.csproj|solutionrelative:empleamos.core\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25CB5CEF-7BB6-4846-B6CA-1DCEE356B62C}|Empleamos.Infrastructure\\Empleamos.Infrastructure.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\empleamos.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25CB5CEF-7BB6-4846-B6CA-1DCEE356B62C}|Empleamos.Infrastructure\\Empleamos.Infrastructure.csproj|solutionrelative:empleamos.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8826297-04B0-4A38-8902-F2B9C1B78798}|Empleamos.Core\\Empleamos.Core.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\empleamos.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8826297-04B0-4A38-8902-F2B9C1B78798}|Empleamos.Core\\Empleamos.Core.csproj|solutionrelative:empleamos.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2652A23D-8991-43B6-A639-4ABE771783FD}|Empleamos.Api\\Empleamos.Api.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\empleamos.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2652A23D-8991-43B6-A639-4ABE771783FD}|Empleamos.Api\\Empleamos.Api.csproj|solutionrelative:empleamos.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3116317-67CE-4978-ABD5-25A9ABDE04F1}|Tests\\Tests.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\tests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3116317-67CE-4978-ABD5-25A9ABDE04F1}|Tests\\Tests.csproj|solutionrelative:tests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3116317-67CE-4978-ABD5-25A9ABDE04F1}|Tests\\Tests.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\tests\\usercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3116317-67CE-4978-ABD5-25A9ABDE04F1}|Tests\\Tests.csproj|solutionrelative:tests\\usercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2652A23D-8991-43B6-A639-4ABE771783FD}|Empleamos.Api\\Empleamos.Api.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\empleamos.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2652A23D-8991-43B6-A639-4ABE771783FD}|Empleamos.Api\\Empleamos.Api.csproj|solutionrelative:empleamos.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,39 +30,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 191,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Empleamos.Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Empleamos.Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABgAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T03:30:36.487Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Empleamos.Api\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Empleamos.Api\\Controllers\\UserController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAFAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T03:27:18.076Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Empleamos.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Program.cs",
+              "RelativeToolTip": "Empleamos.Api\\Program.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:10:55.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthenticationControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\AuthenticationControllerTests.cs",
+              "RelativeDocumentMoniker": "Tests\\AuthenticationControllerTests.cs",
+              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\AuthenticationControllerTests.cs",
+              "RelativeToolTip": "Tests\\AuthenticationControllerTests.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAwwMoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:25:30.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\UserControllerTests.cs",
+              "RelativeDocumentMoniker": "Tests\\UserControllerTests.cs",
+              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\UserControllerTests.cs",
+              "RelativeToolTip": "Tests\\UserControllerTests.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T19:58:43.317Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 191,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -87,82 +89,22 @@
               "RelativeDocumentMoniker": "Empleamos.Api\\Controllers\\AuthenticationController.cs",
               "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "Empleamos.Api\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAFAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T15:31:35.066Z",
+              "WhenOpened": "2024-09-23T21:02:48.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserFacadeService.cs",
-              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Facade\\UserFacadeService.cs",
-              "RelativeDocumentMoniker": "Empleamos.Core\\Facade\\UserFacadeService.cs",
-              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Facade\\UserFacadeService.cs",
-              "RelativeToolTip": "Empleamos.Core\\Facade\\UserFacadeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T17:12:22.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Empleamos.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Program.cs",
-              "RelativeToolTip": "Empleamos.Api\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T16:48:12.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IUserFacadeService.cs",
-              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Interfaces\\IUserFacadeService.cs",
-              "RelativeDocumentMoniker": "Empleamos.Core\\Interfaces\\IUserFacadeService.cs",
-              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Interfaces\\IUserFacadeService.cs",
-              "RelativeToolTip": "Empleamos.Core\\Interfaces\\IUserFacadeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T16:46:08.221Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Empleamos.Core\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Services\\UserService.cs",
-              "RelativeToolTip": "Empleamos.Core\\Services\\UserService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA+AAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Empleamos.Api\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Empleamos.Api\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAB8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:45.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "Empleamos.Core\\Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "Empleamos.Core\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:24.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Empleamos.Core\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Core\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "Empleamos.Core\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:06:14.939Z"
+              "WhenOpened": "2024-09-21T03:27:18.076Z"
             }
           ]
         }

@@ -4,6 +4,7 @@ using Empleamos.Core.Interfaces;
 using Empleamos.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Tests;
 
 namespace Empleamos.Api.Controllers
 {
@@ -28,8 +29,9 @@ namespace Empleamos.Api.Controllers
                 if (users == null || !users.Any())
                 {
                     return NotFound(new { message = "No users found." });
-                }
-                return Ok(new { message = "Users retrieved successfully.", data = users });
+                }                
+                return Ok(new ApiResponse { Message = "Users retrieved successfully.", Data = users });
+
             }
             catch (Exception ex)
             {

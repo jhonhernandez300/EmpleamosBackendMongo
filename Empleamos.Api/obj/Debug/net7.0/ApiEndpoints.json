@@ -108,17 +108,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Empleamos.Core.DTOs.LoginResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Empleamos.Api.Controllers.AuthenticationController",
@@ -135,5 +125,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Empleamos.Api.Controllers.AuthenticationController",
+    "Method": "RegisterAsync",
+    "RelativePath": "api/v1/authenticate/RegisterAsync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Empleamos.Core.DTOs.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Empleamos.Core.DTOs.RegisterResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

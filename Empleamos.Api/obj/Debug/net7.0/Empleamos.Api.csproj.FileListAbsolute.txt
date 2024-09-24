@@ -43,6 +43,7 @@ C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\Empleamos.Api.csproj.CoreCompileInputs.cache
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\Empleamos.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\Empleamos.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\Empleamos.Api.sourcelink.json
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\staticwebassets\msbuild.Empleamos.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -57,4 +58,3 @@ C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\Empleamos.Api.pdb
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\Empleamos.Api.genruntimeconfig.cache
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\ref\Empleamos.Api.dll
-C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Api\obj\Debug\net7.0\Empleamos.Api.sourcelink.json

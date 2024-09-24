@@ -8,9 +8,9 @@ C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Infrastructure\obj\Debug\net7.0\Empleamos.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Infrastructure\obj\Debug\net7.0\Empleamos.Infrastructure.AssemblyInfo.cs
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Infrastructure\obj\Debug\net7.0\Empleamos.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Infrastructure\obj\Debug\net7.0\Empleamos.Infrastructure.sourcelink.json
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Infrastructure\obj\Debug\net7.0\Empleamo.7872E3C6.Up2Date
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Infrastructure\obj\Debug\net7.0\Empleamos.Infrastructure.dll
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Infrastructure\obj\Debug\net7.0\refint\Empleamos.Infrastructure.dll
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Infrastructure\obj\Debug\net7.0\Empleamos.Infrastructure.pdb
 C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Infrastructure\obj\Debug\net7.0\ref\Empleamos.Infrastructure.dll
-C:\Users\jhon\OneDrive\Documentos\Pruebas empresas\Empleamos\Empleamos\Empleamos.Infrastructure\obj\Debug\net7.0\Empleamos.Infrastructure.sourcelink.json

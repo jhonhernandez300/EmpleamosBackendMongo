@@ -7,6 +7,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using System.Security.Claims;
 using System.Text;
+using Tests;
 
 namespace Empleamos.Api.Controllers
 {
@@ -54,21 +55,31 @@ namespace Empleamos.Api.Controllers
         {
             if (request == null)
             {
-                return BadRequest(new { message = "Invalid register request." });
+                return BadRequest(new ApiResponse { Message = "Invalid register request." });
             }
 
             try
             {
-                var result = await RegisterAsync(request);
-                return result.Success ? Ok(new { message = result.Message }) : BadRequest(new { message = result.Message });
+                var result = await _userManager.CreateAsync(new ApplicationUserEntity { UserName = request.Username, Email = request.Email }, request.Password);
+
+                if (result.Succeeded)
+                {
+                    return Ok(new ApiResponse { Message = "Registration successful." });
+                }
+                else
+                {
+                    return BadRequest(new ApiResponse { Message = "Registration failed.", Data = result.Errors });
+                }
             }
             catch (Exception ex)
-            {                
-                return StatusCode(500, new { message = "An error occurred while registering.", error = ex.Message });
+            {
+                return StatusCode(500, new ApiResponse { Message = "An error occurred.", Data = ex.Message });
             }
         }
 
-        private async Task<RegisterResponse> RegisterAsync(RegisterRequest request)
+        [HttpPost]
+        [Route("RegisterAsync")]
+        public async Task<RegisterResponse> RegisterAsync(RegisterRequest request)
         {
             try
             {
@@ -92,10 +103,12 @@ namespace Empleamos.Api.Controllers
                     CreationDate = DateTime.UtcNow
                 };
                 var createUserResult = await _userManager.CreateAsync(userExists, request.Password);
+
                 if (!createUserResult.Succeeded) return new RegisterResponse { Message = $"Create user failed {createUserResult?.Errors?.First()?.Description}", Success = false };
                 //user is created...
                 //then add user to a role...
                 var addUserToRoleResult = await _userManager.AddToRoleAsync(userExists, "SUPLIER");
+
                 if (!addUserToRoleResult.Succeeded) return new RegisterResponse { Message = $"Create user succeeded but could not add user to role {addUserToRoleResult?.Errors?.First()?.Description}", Success = false };
 
                 //all is still well..
@@ -111,25 +124,34 @@ namespace Empleamos.Api.Controllers
             }
         }
 
-        [HttpPost]
-        [Route("login")]
-        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(LoginResponse))]
+        [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
-            if (request == null || string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Password))
+            if (!ModelState.IsValid)
             {
-                return BadRequest(new { message = "Invalid login request." });
+                return BadRequest(new ApiResponse
+                {
+                    Message = "Invalid model state",
+                    Error = "Invalid model state",
+                    Data = null
+                });
             }
 
-            try
+            var loginResponse = await LoginAsync(request);
+
+            // Si la operación de inicio de sesión no fue exitosa
+            if (!loginResponse.Success)
             {
-                var result = await LoginAsync(request);
-                return result.Success ? Ok(new { message = result.Message, accessToken = result.AccessToken }) : BadRequest(new { message = result.Message });
+                // Retornar un BadRequest con un mensaje apropiado
+                return BadRequest(new ApiResponse
+                {
+                    Message = loginResponse.Message, // Asegúrate de que este mensaje es el correcto
+                    Error = loginResponse.Message,
+                    Data = null
+                });
             }
-            catch (Exception ex)
-            {                
-                return StatusCode(500, new { message = "An error occurred while logging in.", error = ex.Message });
-            }
+
+            return Ok(loginResponse); // Retornar el token o la información del usuario
         }
 
         private async Task<LoginResponse> LoginAsync(LoginRequest request)
@@ -137,16 +159,47 @@ namespace Empleamos.Api.Controllers
             try
             {
                 var user = await _userManager.FindByEmailAsync(request.Email);
-                if (user is null) return new LoginResponse { Message = "Invalid email/password", Success = false };
 
-                //all is well if ew reach here
-                var claims = new List<Claim>
+                // Si no se encuentra al usuario, retornar un mensaje específico
+                if (user is null)
                 {
-                    new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
-                    new Claim(ClaimTypes.Name, user.UserName),
-                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
-                };
+                    return new LoginResponse
+                    {
+                        Message = "User not found",
+                        Success = false
+                    };
+                }
+
+                // Verificar si la cuenta del usuario está bloqueada
+                if (await _userManager.IsLockedOutAsync(user))
+                {
+                    return new LoginResponse
+                    {
+                        Message = "User account is locked", // Asegúrate de que este mensaje sea devuelto
+                        Success = false
+                    };
+                }
+
+                // Comprobar la contraseña
+                var isPasswordValid = await _userManager.CheckPasswordAsync(user, request.Password);
+                if (!isPasswordValid) // Si la contraseña es incorrecta
+                {
+                    return new LoginResponse
+                    {
+                        Message = "Invalid email/password",
+                        Success = false
+                    };
+                }
+
+                // Si se llega aquí, las credenciales son correctas
+                var claims = new List<Claim>
+        {
+            new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
+            new Claim(ClaimTypes.Name, user.UserName),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
+        };
+
                 var roles = await _userManager.GetRolesAsync(user);
                 var roleClaims = roles.Select(x => new Claim(ClaimTypes.Role, x));
                 claims.AddRange(roleClaims);
@@ -161,7 +214,7 @@ namespace Empleamos.Api.Controllers
                     claims: claims,
                     expires: expires,
                     signingCredentials: creds
-                    );
+                );
 
                 return new LoginResponse
                 {
@@ -175,8 +228,17 @@ namespace Empleamos.Api.Controllers
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                return new LoginResponse { Success = false, Message = ex.Message };
+                return new LoginResponse
+                {
+                    Success = false,
+                    Message = "An error occurred during login." // Mensaje genérico para errores
+                };
             }
         }
+
+
+
+
+
     }
 }
