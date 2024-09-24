@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{B3116317-67CE-4978-ABD5-25A9ABDE04F1}|Tests\\Tests.csproj|solutionrelative:tests\\usercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B3116317-67CE-4978-ABD5-25A9ABDE04F1}|Tests\\Tests.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\tests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3116317-67CE-4978-ABD5-25A9ABDE04F1}|Tests\\Tests.csproj|solutionrelative:tests\\authenticationcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2652A23D-8991-43B6-A639-4ABE771783FD}|Empleamos.Api\\Empleamos.Api.csproj|c:\\users\\jhon\\onedrive\\documentos\\pruebas empresas\\empleamos\\empleamos\\empleamos.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2652A23D-8991-43B6-A639-4ABE771783FD}|Empleamos.Api\\Empleamos.Api.csproj|solutionrelative:empleamos.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -25,8 +29,17 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\AuthenticationControllerTests.cs",
+              "RelativeDocumentMoniker": "Tests\\AuthenticationControllerTests.cs",
+              "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\AuthenticationControllerTests.cs",
+              "RelativeToolTip": "Tests\\AuthenticationControllerTests.cs",
+              "ViewState": "AgIAAB0BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T19:02:30.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,10 +49,14 @@
               "RelativeDocumentMoniker": "Tests\\UserControllerTests.cs",
               "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Tests\\UserControllerTests.cs",
               "RelativeToolTip": "Tests\\UserControllerTests.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAMwEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAcwGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T19:58:43.317Z",
+              "WhenOpened": "2024-09-24T18:59:22.178Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         },
@@ -49,13 +66,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Empleamos.Api\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\jhon\\OneDrive\\Documentos\\Pruebas empresas\\Empleamos\\Empleamos\\Empleamos.Api\\Controllers\\UserController.cs",
               "RelativeToolTip": "Empleamos.Api\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAABbAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAAC8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T03:27:18.076Z",
               "EditorCaption": ""
